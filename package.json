@@ -1,0 +1,19 @@
+{
+  "name": "es6-starter",
+  "version": "1.0.0",
+  "description": "An ES6 starter template using Webpack 2 and Babel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timstruthoff/es6-starter.git"
+  },
+  "author": "Tim Struthoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timstruthoff/es6-starter/issues"
+  },
+  "homepage": "https://github.com/timstruthoff/es6-starter#readme"
+}
