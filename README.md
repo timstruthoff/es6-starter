@@ -1,6 +1,6 @@
 # es6-starter
 
-##Usage
+## Usage
 
 `npm install`
 
