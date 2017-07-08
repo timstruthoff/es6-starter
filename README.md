@@ -8,4 +8,4 @@ Build for production:
 `npm build`
 
 Run in development mode:
-`npm build`
+`npm run`
