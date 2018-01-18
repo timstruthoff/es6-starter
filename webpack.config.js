@@ -5,6 +5,10 @@ var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/js/app.js',
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -14,14 +18,13 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                use: [
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            presets: ['es2015']
-                        }
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env']
                     }
-                ]
+                }
             },
             {
                 test: /\.html$/,
